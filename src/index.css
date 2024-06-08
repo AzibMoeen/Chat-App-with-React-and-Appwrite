@@ -1,0 +1,196 @@
+/* Global settings */
+:root {
+  --mainBgColor: #f5f5f5;
+  --secondaryBgColor: #ffffff;
+  --borderColor1: #dee2e6;
+  --borderColor2: #ced4da;
+  --textColorMain: #343a40;
+  --textColorSecondary: #6c757d;
+  --themeColorMain: #007bff;
+  --themeColorSecondary: #6c757d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--mainBgColor);
+  color: var(--textColorMain);
+}
+
+a {
+  color: var(--themeColorMain);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+#header--wrapper {
+  background-color: var(--themeColorMain);
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid var(--borderColor1);
+  border-bottom: none;
+}
+
+.header--link {
+  color: #c7d8eb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header--link:hover {
+  color: #fff;
+}
+
+/* Login & Register Pages */
+.auth--container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form--wrapper {
+  width: 600px;
+  padding: 2em;
+  background-color: var(--secondaryBgColor);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.field--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0.5em 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  background: var(--secondaryBgColor);
+  border: 1px solid var(--borderColor2);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  color: var(--textColorMain);
+  outline: none;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.btn--lg {
+  padding: 1em 2em;
+}
+
+.btn--main {
+  background-color: var(--themeColorMain);
+  color: #fff;
+}
+
+.btn--secondary {
+  background-color: var(--themeColorSecondary);
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Room Styles */
+.room--container {
+  padding: 2em;
+  background-color: var(--secondaryBgColor);
+  border-radius: 0 0 10px 10px;
+  border: 1px solid var(--borderColor1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#message--form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: var(--secondaryBgColor);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.send-btn--wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 1em;
+  background-color: var(--secondaryBgColor);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.message--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message--body {
+  padding: 0.5em 0;
+  color: var(--textColorSecondary);
+  background-color: #f8f9fa;
+  padding: 1em;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.message--body--owner {
+  border: 1px solid var(--themeColorMain);
+  background-color: #f8f9fa;
+}
+
+.message-timestamp {
+  margin-left: 1em;
+  color: var(--textColorSecondary);
+}
+
+.delete--btn {
+  color: var(--themeColorMain);
+  cursor: pointer;
+  transition: 0.3s;
+  width: 16px;
+}
+
+.delete--btn:hover {
+  color: #0056b3;
+}
